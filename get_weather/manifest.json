@@ -1,0 +1,15 @@
+{
+  "name": "get_weather",
+  "description": "Fetches current weather conditions and today's forecast for a given location using latitude and longitude coordinates",
+  "entrypoint": "run.py",
+  "parameters": {
+    "latitude": {
+      "type": "number",
+      "description": "Latitude coordinate (default: 40.6401 for Thessaloniki, Greece)"
+    },
+    "longitude": {
+      "type": "number",
+      "description": "Longitude coordinate (default: 22.9444 for Thessaloniki, Greece)"
+    }
+  }
+}

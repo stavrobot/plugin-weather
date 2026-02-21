@@ -1,0 +1,4 @@
+{
+  "name": "weather",
+  "description": "Geocodes city names and fetches current weather data and forecasts from Open-Meteo API"
+}

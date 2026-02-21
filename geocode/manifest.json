@@ -1,0 +1,11 @@
+{
+  "name": "geocode",
+  "description": "Geocodes a city name to find matching locations with coordinates using the Open-Meteo Geocoding API",
+  "entrypoint": "run.py",
+  "parameters": {
+    "city": {
+      "type": "string",
+      "description": "The city name to search for"
+    }
+  }
+}
