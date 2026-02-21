@@ -2,6 +2,10 @@
 
 A Stavrobot plugin that provides weather data using the Open-Meteo API. No API key required.
 
+## Installation
+
+Ask Stavrobot to install git@github.com:stavrobot/plugin-weather.git.
+
 ## Tools
 
 ### geocode
