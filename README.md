@@ -4,7 +4,7 @@ A Stavrobot plugin that provides weather data using the Open-Meteo API. No API k
 
 ## Installation
 
-Ask Stavrobot to install git@github.com:stavrobot/plugin-weather.git.
+Ask Stavrobot to install https://github.com/stavrobot/plugin-weather.git.
 
 ## Tools
 
