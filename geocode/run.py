@@ -8,7 +8,6 @@
 import json
 import sys
 import requests
-from urllib.parse import quote
 
 def main():
     # Read input parameters

@@ -13,9 +13,22 @@ def main():
     # Read input parameters
     input_data = json.load(sys.stdin)
 
-    # Get latitude and longitude with defaults (Thessaloniki, Greece)
-    latitude = input_data.get("latitude", 40.6401)
-    longitude = input_data.get("longitude", 22.9444)
+    latitude = input_data.get("latitude")
+    longitude = input_data.get("longitude")
+
+    if latitude is None:
+        error_result = {
+            "error": "Latitude is required"
+        }
+        json.dump(error_result, sys.stdout, indent=2)
+        sys.exit(1)
+
+    if longitude is None:
+        error_result = {
+            "error": "Longitude is required"
+        }
+        json.dump(error_result, sys.stdout, indent=2)
+        sys.exit(1)
 
     # Build API URL
     base_url = "https://api.open-meteo.com/v1/forecast"
