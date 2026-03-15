@@ -1,0 +1,23 @@
+{
+  "name": "get_forecast",
+  "description": "Returns daily forecast data (high/low temperatures, sunrise, sunset, precipitation, weather code) for a configurable range of future days",
+  "entrypoint": "run.py",
+  "parameters": {
+    "latitude": {
+      "type": "number",
+      "description": "Latitude coordinate of the location"
+    },
+    "longitude": {
+      "type": "number",
+      "description": "Longitude coordinate of the location"
+    },
+    "from_day": {
+      "type": "integer",
+      "description": "Start of the forecast range as an offset from today. 0 means today, 1 means tomorrow, 2 means the day after tomorrow, etc. Defaults to 1 (tomorrow). Clamped to 0–6."
+    },
+    "to_day": {
+      "type": "integer",
+      "description": "End of the forecast range (inclusive) as an offset from today. 0 means today, 1 means tomorrow, etc. Defaults to 6 (six days from today). Must be >= from_day. Clamped to 0–6."
+    }
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "name": "get_current_weather",
+  "description": "Returns current weather conditions plus today's daily summary (high/low temperatures, sunrise, sunset, precipitation) for a given location",
+  "entrypoint": "run.py",
+  "parameters": {
+    "latitude": {
+      "type": "number",
+      "description": "Latitude coordinate of the location"
+    },
+    "longitude": {
+      "type": "number",
+      "description": "Longitude coordinate of the location"
+    }
+  }
+}

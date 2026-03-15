@@ -62,15 +62,9 @@ def main():
                 "timezone": loc.get("timezone", "")
             }
 
-            # Add admin areas if available
+            # Add state/region if available (useful for disambiguation).
             if "admin1" in loc:
                 location["admin1"] = loc["admin1"]
-            if "admin2" in loc:
-                location["admin2"] = loc["admin2"]
-            if "admin3" in loc:
-                location["admin3"] = loc["admin3"]
-            if "admin4" in loc:
-                location["admin4"] = loc["admin4"]
 
             locations.append(location)
 
@@ -87,12 +81,6 @@ def main():
     except requests.exceptions.RequestException as e:
         error_result = {
             "error": f"Failed to fetch geocoding data: {str(e)}"
-        }
-        json.dump(error_result, sys.stdout, indent=2)
-        sys.exit(1)
-    except Exception as e:
-        error_result = {
-            "error": f"Unexpected error: {str(e)}"
         }
         json.dump(error_result, sys.stdout, indent=2)
         sys.exit(1)
