@@ -1,4 +1,5 @@
 {
   "name": "weather",
-  "description": "Get current weather and forecasts from Open-Meteo."
+  "description": "Get current weather and forecasts from Open-Meteo.",
+  "summary": "Check weather forecasts via Open-Meteo"
 }
